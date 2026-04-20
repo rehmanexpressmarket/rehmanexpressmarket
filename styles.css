@@ -100,24 +100,27 @@ body {
     padding: 5px 30px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+/* 🔧 CORRECCIÓN: clase mal usada en HTML */
+.logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
+/* 🔧 MANTENER compatibilidad (por si usas logo-icon en otro sitio) */
 .logo-icon {
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
 
-.logo-text p {
+/* 🔧 CORRECCIÓN: ya no hay <p> dentro de .logo-text */
+.logo-text {
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
-    margin: 0;
 }
+
 
 .nav-links {
     display: flex;
